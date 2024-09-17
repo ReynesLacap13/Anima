@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Sounds</title>
+</head>
+<body>
+    <h1>Animal Sounds</h1>
+    <ul>
+        @foreach (var item in Model.Output)
+        {
+            <li>@item</li>
+        }
+    </ul>
+</body>
+</html>
